@@ -1,12 +1,12 @@
 {
-  "name": "hda-typo3/hda_elements",
+  "name": "hda-typo3/fileuploaders",
   "type": "typo3-cms-extension",
   "description": "Hda - Elements Installation",
   "authors": [
     {
-      "name": "Michael Lang",
+      "name": "Matthias Krappitz",
       "role": "Developer",
-      "email": "michael.lang@h-da.de"
+      "email": "matthias@aemka.de"
     }
   ],
   "license": [
@@ -40,7 +40,7 @@
   },
   "extra": {
     "typo3/cms": {
-      "extension-key": "hda_elements"
+      "extension-key": "fileuploaders"
     }
   }
 }
