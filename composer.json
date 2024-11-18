@@ -3,11 +3,21 @@
   "description": "File uploader usernames – Displays file uploader in file list module",
   "license": "GPL-2.0+",
   "type": "typo3-cms-extension",
-  "version": "12.0.0",
+  "version": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Matthias Krappitz",
       "role": "Developer"
+    }
+  ],
+    "keywords": [
+    "extension",
+    "hda"
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:hda-typo3/fileuploaders.git"
     }
   ],
   "require": {
@@ -18,10 +28,6 @@
     "psr-4": {
       "AEMKA\\Fileuploaders\\": "Classes/"
     }
-  },
-  "replace": {
-    "fileuploaders": "self.version",
-    "typo3-ter/fileuploaders": "self.version"
   },
   "extra": {
     "typo3/cms": {
