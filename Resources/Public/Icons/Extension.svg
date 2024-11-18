@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 0 150 120" width="100" overflow="visible"
+	 xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<linearGradient id="a" y2="365.73" gradientUnits="userSpaceOnUse" x2="-122.39"
+					gradientTransform="matrix(45 67.93 67.93 -45 -19262 24870)" y1="365.73" x1="-123.39">
+		<stop stop-color="#fff" offset="0"/>
+		<stop stop-color="#F4F6CE" offset=".172"/>
+		<stop stop-color="#E2E77D" offset=".473"/>
+		<stop stop-color="#D4DC42" offset=".722"/>
+		<stop stop-color="#CCD61D" offset=".904"/>
+		<stop stop-color="#C9D30F" offset="1"/>
+	</linearGradient>
+	<path d="M49.94 27.166c-5.343 0-11.25 1.765-14.84 4.57L5.598 54.89c-6.183 4.842-7.614 11.61-2.42 15.165L46.728 99.9c5.025 3.44 11.062 5.125 16.9 5.125 7.946 0 15.523-3.122 19.675-9.184l14.55-21.23-29.427-11.4c-5.283-2.05-3.735-9.14 2.466-15.32l14.545-14.5L53.73 27.5c-1.2-.223-2.48-.33-3.79-.33"
+		  fill="url(#a)"/>
+	<linearGradient id="b" y2="366.01" gradientUnits="userSpaceOnUse" x2="-122.39"
+					gradientTransform="matrix(.94 61.97 61.97 -.94 -22449 8009.3)" y1="366.01" x1="-123.39">
+		<stop stop-color="#fff" offset="0"/>
+		<stop stop-color="#E7F2F5" offset=".093"/>
+		<stop stop-color="#96C5D2" offset=".423"/>
+		<stop stop-color="#5BA5B9" offset=".695"/>
+		<stop stop-color="#3791A9" offset=".894"/>
+		<stop stop-color="#2989A3" offset="1"/>
+	</linearGradient>
+	<path d="M109.06 17.213c-4.217 0-9.636 2.214-12.782 5.36l-10.84 10.805 14.624 2.713c11.304 2.11 18.252 8.66 14.05 14.8L97.854 74.61l9.22 3.573c1.685.653 3.463.96 5.268.96 7.866 0 16.215-5.825 19.436-14.127l14.516-37.44c1.728-4.464-2.07-8.1-8.037-8.487l-28.467-1.86c-.24-.02-.48-.03-.73-.03"
+		  fill="url(#b)"/>
+	<defs>
+		<path id="c"
+			  d="M85.438 33.378L70.893 47.872c-6.2 6.183-7.75 13.275-2.466 15.327l29.427 11.41 16.256-23.73c4.21-6.14-2.74-12.69-14.043-14.8l-14.627-2.7"/>
+	</defs>
+	<clipPath id="d">
+		<use xlink:href="#c"/>
+	</clipPath>
+	<g clip-path="url(#d)">
+		<image width="118"
+			   xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAlgCWAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA EAMCAwYAAALLAAADxwAABPb/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIAFwAeQMBIgACEQEDEQH/ xACiAAACAwEBAQAAAAAAAAAAAAABAwAEBQYHAgEBAQEBAQAAAAAAAAAAAAAAAgEABAMQAAICAQMC BwEBAQAAAAAAAAASARECBRUlIQQxIgMTIzMkEEIUEQAAAwcEAgEFAQAAAAAAAAAAAQMQsQJykqI0 MBFBBBJCMSFxIjITcxIAAgEBBwQDAQAAAAAAAAAAAAExICFxobECMnJRgZHREEFhIv/aAAwDAQAC EQMRAAAAsUnUOfisitBLMqyazKsOsyrJbUqSa1Komv8AovmHp6XB0dGl7FUZDFRgOWGg1cYJlhoO XGCU+meb+kJcVS0afRFBsMTGg5UaDVBsOUGyZQaDp6L596ClyVS/V6skOAig4HJjYakOByg2HJjR KO94buVebq3q/XkhwESHg1IcBkhwOTHA1IcDvntOQ69XERqfHbs0aUOzBpwbLmnDsqakNyhqybJG tDszqsnWt//aAAgBAgABBQDKZu5GkaRshshsiMsvby8ZJJJ/sfXl4ySSST/I+vLxkkkkkkj68vGS SSSSSPrmOsxBMQTEE4wTjBOMEYx7f//aAAgBAwABBQDKcmbIvIvIvIvIvIuUyjzUUUUUUf4yjzUU UUUUV5ZjrRRRRRRXlmOtFFFFFFdJiLqCoKg6HQ6HSv/aAAgBAQABBQDWNT1H0tT3jVjeNWN41Y3j VjeNWN51Y3nVjedXN51c3nVzedXN61c3rVzttY1bLuTXI5ZSiiiiiiiiiiijtY/Ua1HKqKKKKKKK KUKKUdrH6jWY5RRRRRRRRRRRRRTtY/SavjySiiiiiiiiiiiinbY/pNWx5FRRRRRRRRRRRRTt8f0G qY3qCiiiiiiiiiiiinb4/oNSxvvlFFFFFFFFFFFFPQx+c1DH9iiiiiiiiiiiiinoY/Md9jfdqKKK KKKKKKKKKejj8x3mN9ygoooopOIooooop6WPynrf8Hu8YcYcWcUcUcScScQcQcOcOcMcMYbO5//a AAgBAgIGPwB2/ZLJZLJZL8kvyO17lkx31vmsmOt89OTHW+enJjrfPTkx2kolYm5Ym7Tj6N2nH0b9 OPof9ad669H+H//aAAgBAwIGPwB2uWSyWSyWSyWO17kO91vkh31u9Dvr7jr7jtJJJJJJ+P/aAAgB AQEGPwDsppdlSBOGPaGGGIyIiGWrWYy1azGWrWYy1azGYtWYzFqzGYtWYzFqzGYtWYzFqzGYtWYz FqzGYtWYShi7apwnHCRkcZ/UjMmdqc3ayP8ApC8mdmc3ayM8LyZ2Z9ZGeF5M7E+slPC9nYn1kp4X sXm1kp4XsWm1k54XsWm1k5oXsVm1k5iexT760ExPZF/Tfz3/AC+RzcObhzcObhzcObhzcObhzcPa 4e1w9rh7XCHx8vLctv2+Wf/Z"
+			   transform="matrix(.48 0 0 -.48 62.37 75.44)" height="89"/>
+	</g>
+</svg>
