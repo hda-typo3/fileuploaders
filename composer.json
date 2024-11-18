@@ -3,7 +3,7 @@
   "description": "File uploader usernames – Displays file uploader in file list module",
   "license": "GPL-2.0+",
   "type": "typo3-cms-extension",
-  "version": "GPL-2.0-or-later",
+  "version": "12.0.0",
   "authors": [
     {
       "name": "Matthias Krappitz",
