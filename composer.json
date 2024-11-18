@@ -1,9 +1,8 @@
 {
   "name": "hda-typo3/fileuploaders",
   "description": "File uploader usernames – Displays file uploader in file list module",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "type": "typo3-cms-extension",
-  "version": "12.0.0",
   "authors": [
     {
       "name": "Matthias Krappitz",
