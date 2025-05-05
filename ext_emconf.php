@@ -8,7 +8,7 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'File uploader usernames',
     'description' => 'Displays file uploader in file list module',
     'category' => 'backend',
-    'version' => '12.0.0',
+    'version' => '13.0.0',
     'state' => 'alpha',
     'uploadfolder' => false,
     'createDirs' => '',
@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => '',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.0-12.4.99',
+            'typo3' => '13.4.0-13.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
