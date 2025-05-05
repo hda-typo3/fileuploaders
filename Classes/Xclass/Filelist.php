@@ -44,11 +44,12 @@ class Filelist extends \TYPO3\CMS\Filelist\Filelist
                 'data-filelist-element' => 'true',
                 'data-filelist-type' => $resourceView->getType(),
                 'data-filelist-identifier' => $resourceView->getIdentifier(),
-                'data-filelist-state-identifier' => $resourceView->getStateIdentifier(),
                 'data-filelist-name' => htmlspecialchars($resourceView->getName()),
+                'data-filelist-icon' => $resourceView->getIconIdentifier(),
                 'data-filelist-thumbnail' => $resourceView->getThumbnailUri(),
                 'data-filelist-uid' => $resourceView->getUid(),
                 'data-filelist-meta-uid' => $resourceView->getMetaDataUid(),
+                'data-filelist-url' => $resourceView->getPublicUrl(),
                 'data-filelist-selectable' => $resourceView->isSelectable ? 'true' : 'false',
                 'data-filelist-selected' => $resourceView->isSelected ? 'true' : 'false',
                 'data-multi-record-selection-element' => 'true',
@@ -63,7 +64,6 @@ class Filelist extends \TYPO3\CMS\Filelist\Filelist
                     case 'cruser_id':
                         $data[$field] = '';
                         if ($resourceView->resource instanceof File) {
-                            $queryString = '"identifier":"' . $resourceView->getName() . '"';
                             $queryBuilder = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Database\ConnectionPool::class)->getQueryBuilderForTable('sys_log');
                             $result = $queryBuilder
                                 ->select('be_users.username')
@@ -72,13 +72,27 @@ class Filelist extends \TYPO3\CMS\Filelist\Filelist
                                 ->where(
                                     $queryBuilder->expr()->and(
                                         $queryBuilder->expr()->eq('sys_log.channel', $queryBuilder->createNamedParameter('file')),
-                                        $queryBuilder->expr()->like('sys_log.log_data', $queryBuilder->createNamedParameter(
-                                            '%' . $queryBuilder->escapeLikeWildcards($queryString) . '%'
-                                        ))
+                                        $queryBuilder->expr()->comparison(
+                                            sprintf('JSON_SEARCH(%s, "one", :name, NULL, "$.identifier")',
+                                                $queryBuilder->quoteIdentifier('sys_log.log_data')
+                                            ),
+                                            'IS NOT',
+                                            'NULL'
+                                        ),
+                                        $queryBuilder->expr()->comparison(
+                                            sprintf('JSON_SEARCH(%s, "one", :path, NULL, "$.destination")',
+                                                $queryBuilder->quoteIdentifier('sys_log.log_data')
+                                            ),
+                                            'IS NOT',
+                                            'NULL'
+                                        )
+
                                     )
                                 )
-                                ->execute()
-                                ->fetch();
+                                ->setParameter('name', $resourceView->getName())
+                                ->setParameter('path', $resourceView->getPath())
+                                ->executeQuery()
+                                ->fetchAssociative();
                             $data[$field] = (isset($result['username'])) ? $result['username'] : '';
                         }
                         break;
